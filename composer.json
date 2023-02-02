@@ -1,0 +1,35 @@
+{
+    "name": "aammui/form-request",
+    "description": "Form request wrapper for Laravel",
+    "authors": [
+        {
+            "name": "Bedram Tamang",
+            "email": "tmgbedu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aammui\\FormRequest\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aammui\\FormRequest\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aammui\\RolePermission\\RolePermissionServiceProvider"
+            ]
+        }
+    }
+}
